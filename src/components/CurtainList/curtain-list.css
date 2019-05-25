@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  width: 950px;
+  height: 780px;
+  border: 1px solid;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#myDiv {
+  position: absolute;
+  z-index: 9;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+  width:950px;
+  background-color: lightgrey;
+  height: 780px;
+  top:-740px;
+}
+
+#myDivHeader {
+  padding: 10px;
+  z-index: 10;
+  background-color: grey;
+  color: #fff;
+  line-height: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+section,h1 {
+  padding: 0 1em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5,150px);  /* 3 columns */
+  grid-template-rows: repeat(5,150px); /* 3 rows  */
+  grid-gap:50px 30px; /* 50 pixels of space added between rows and 30 pixels added between columns  */
+}
+
+.grid-item {
+  border:thin gray solid;
+  padding:10px;
+}
+
+.grid img {
+  width: 100%;
+}
